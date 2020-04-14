@@ -7,7 +7,7 @@ This was made by following along with [Gabriel Gambetta](https://www.gabrielgamb
 
 The tutorial is written in somewhere-between JavaScript and psuedocode, but generally the main functions appear like so:
 
-```
+```javascript
 IntersectRaySphere(O, D, sphere) {
     C = sphere.center
     r = sphere.radius
@@ -29,7 +29,7 @@ IntersectRaySphere(O, D, sphere) {
 
 So the exercise for myself was to write a funcitoning raytracer but try to make use of C++ and OpenFrameworks functionality. The above function is a good example of a conversion as it's the first time I've ever returned a `double*` to a `static double` array created inside a function. Whether that's good practice or not I don't know yet:
 
-```
+```c
 double* ofApp::intersectRaySphere(glm::vec3 o, glm::vec3 Dir, const Sphere& sphere){
     vec3 C = sphere.centre;
     double r = sphere.r;
@@ -61,7 +61,7 @@ double* ofApp::intersectRaySphere(glm::vec3 o, glm::vec3 Dir, const Sphere& sphe
 
 OF was mostly used to access GLM classes and functionality, and also to create a window and a texture to create the image/animation. 
 
-```
+```c
 void ofApp::setup(){
     ticks = 0;
     Cw = ofGetWidth();
@@ -84,7 +84,7 @@ void ofApp::setup(){
 
 I found the tutorial to be fantastic. I sped through it a little to quickly to get something working so could do with reading it more thoroughly, but I would recommend it as an intro to raytracing. It was also a good exercise in C++ as I played with structs for simple data structures and even pointers at times. I made and effort to use C++ specifics where ever possible - like using iterators in `for` loops:
 
-```
+```c
 for(vector<Sphere>::const_iterator it=spheres.begin(); it!=spheres.end(); ++it){
     double* t = intersectRaySphere(o, Dir, *it); 
     if((t[0] > t_min && t[0] > t_max) && t[0] < closest_t){
@@ -105,4 +105,3 @@ for(vector<Sphere>::const_iterator it=spheres.begin(); it!=spheres.end(); ++it){
 The project was created with `of_v20200123_osx_release` but there is no reason why it shouldn't run with most OF releases - it doesn't have too many dependencies within OF. Although I understand OF [changed the way you interface with GLM](https://openframeworks.cc/learning/02_graphics/how_to_use_glm/) at some point in the last 5 years maybe..?
 
 Downloading the project into your OpenFrameworks `/myApps` folder and running `make` to compile, and then `make RunRelease` to run the program. You should see the looping animation as per the GIF above.
-

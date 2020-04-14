@@ -8,7 +8,13 @@ It was also a good excercise in writing classes in Python which is new to me.
 
 Although these 'toy examples' are not particularly useful, I would be interested to see if there is some practical application in writing an exremely light-weight neural network which could sit on an Arduino or something, learning from simple data sources.
 
+---
 
+## To run:
+
+```
+jupyter-notebook
+```
 
 The simple 2-layer network based on a __Support Vector Machine__ (SVM) achieves the following results:
 
