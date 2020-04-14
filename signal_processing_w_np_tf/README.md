@@ -2,7 +2,7 @@
 
 Similar to the webscraper, I decided to focus on building and tidying up my own dataset. So I found the [Facial Expression Comparison](https://research.google/tools/datasets/google-facial-expression/) which provides images as links to Flickr photos in a `.csv`. The images are therefore unedited, but the face is given as a pair of normalised coordinates in the `.csv` file so the face can be cropped out of the image.
 
-There are csome comments and titles throughout the notebook explaining what it happening where. It involves some small experiments on single images and then the same operation performed in batch on the dataset.
+There are some comments and titles throughout the notebook explaining what it happening where. It involves some small experiments on single images and then the same operation performed in batch on the dataset. A sample of images are included in the repo so the notebook works fine in Github.
 
 It was a good exercise to get used to Numpy arrays as cropping the face was done by cutting a chunk out of the Numpy array:
 
@@ -49,3 +49,5 @@ conda create -n img-dataset
 conda activate img-dataset
 jupyter-notebook
 ```
+
+However the notebook can be seen in Github [here](https://github.com/joshmurr/HAND-IN-msc-coding-2-in-class-assignments/blob/master/signal_processing_w_np_tf/Numpy%20%7C%20Datasets.ipynb).
