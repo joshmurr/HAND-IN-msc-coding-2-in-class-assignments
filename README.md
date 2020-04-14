@@ -2,7 +2,7 @@
 
 > Hand in for 17-04-20
 
-Each project is in it's respective folder with a short README explaining the project and running instructions.o
+Each project is in it's respective folder with a short README explaining the project and running instructions.
 
 ### [Your first OF project](./my_first_OF_project-raytracer/)
 
