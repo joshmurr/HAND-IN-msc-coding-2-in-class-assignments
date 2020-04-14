@@ -1,1 +1,6 @@
 /imgs
+./FEC_dataset/*.pdf
+./FEC_dataset/faceexp-comparison-data-test-public.csv
+./FEC_dataset/faceexp-comparison-data-train-public.csv
+
+
