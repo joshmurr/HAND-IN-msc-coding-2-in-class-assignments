@@ -8,6 +8,7 @@ This was made by following along with [Gabriel Gambetta](https://www.gabrielgamb
 The tutorial is written in somewhere-between JavaScript and psuedocode, but generally the main functions appear like so:
 
 ```javascript
+// Gambatta's tutorial code:
 IntersectRaySphere(O, D, sphere) {
     C = sphere.center
     r = sphere.radius
@@ -27,7 +28,7 @@ IntersectRaySphere(O, D, sphere) {
 }
 ```
 
-So the exercise for myself was to write a funcitoning raytracer but try to make use of C++ and OpenFrameworks functionality. The above function is a good example of a conversion as it's the first time I've ever returned a `double*` to a `static double` array created inside a function. Whether that's good practice or not I don't know yet:
+So the exercise for myself was to write a functioning raytracer but try to make use of C++ and OpenFrameworks functionality. The above function is a good example of a conversion as there's some passing by reference in there, and it's the first time I've ever returned a `double*` to a `static double` array created inside a function. Whether that's good practice or not I don't know yet:
 
 ```c
 double* ofApp::intersectRaySphere(glm::vec3 o, glm::vec3 Dir, const Sphere& sphere){
