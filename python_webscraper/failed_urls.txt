@@ -1,0 +1,2 @@
+https://www.who.int/search%3Fquery%3Dcorona%26page%3D1%26pagesize%3D10%26sortdir%3Ddesc%26sort%3Drelevance%26default%3DAND%26f.Countries.size%3D100%26f.Lang.filter%3Den%26f.RegionalSites.size%3D100%26f.Topics.size%3D100%26f.contenttype.size%3D100%26f.doctype.size%3D101%26facet.field%3DRegionalSites%26facet.field%3DTopics%26facet.field%3Ddoctype%26facet.field%3DCountries%26facet.field%3Dcontenttype%26facet.field%3DLang%26tune%3Dtrue%26tune.0%3D3%26tune.1%3D2%26tune.2%3D2%26tune.3%3D3%26tune.4%3D180%26tune.5%3D75
+https://google.com/covid19-map/%3Fhl%3Den
