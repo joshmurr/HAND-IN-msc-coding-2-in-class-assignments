@@ -8,6 +8,6 @@ Each project is in it's respective folder with a short README explaining the pro
 
 #### [Python Webscraper](./python_webscraper/)
 
-#### [Neural Networks by Hand](./neural_networks_by_hand/)
+#### [Neural Networks by Hand](./neural_nets_by_hand/)
 
 #### [Signal Processing in Numpy and Tensorflow](./signal_processing_w_np_tf/)
