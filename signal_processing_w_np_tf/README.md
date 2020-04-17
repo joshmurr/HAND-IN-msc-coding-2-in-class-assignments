@@ -37,7 +37,8 @@ OpenCV was then used to resize the images so that they are all the same:
 ```python
 import cv2
 
-res = cv2.resize(face_data[0], dsize=(300, 140), interpolation=cv2.INTER_CUBIC)
+for face in face_data:
+    resized_faces.append(cv2.resize(face, dsize=(average_x, average_y), interpolation=cv2.INTER_CUBIC))
 ```
 
 ---
@@ -50,4 +51,4 @@ conda activate img-dataset
 jupyter-notebook
 ```
 
-However the notebook can be seen in Github [here](https://github.com/joshmurr/HAND-IN-msc-coding-2-in-class-assignments/blob/master/signal_processing_w_np_tf/Numpy%20%7C%20Datasets.ipynb).
+__OR the notebook can be seen in Github [here](https://github.com/joshmurr/HAND-IN-msc-coding-2-in-class-assignments/blob/master/signal_processing_w_np_tf/Numpy%20%7C%20Datasets.ipynb).__
